@@ -50,4 +50,9 @@ public class DemoFragment extends Fragment {
         List<String> dataList=getArguments().getStringArrayList("list");
         listView.setAdapter(new ArrayAdapter<>(getActivity(),android.R.layout.simple_list_item_1,dataList));
     }
+
+
+    public void dfAClick(View view){
+        //do something
+    }
 }

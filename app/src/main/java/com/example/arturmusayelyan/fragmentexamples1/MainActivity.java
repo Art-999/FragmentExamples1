@@ -49,4 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void aClick(View view){
+        demoFragment.dfAClick(view);
+    }
 }
