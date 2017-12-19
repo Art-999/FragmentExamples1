@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 demoFragment = DemoFragment.newInstance(namesList);
                 fragmentTransaction.add(R.id.demo_fragment_layout, demoFragment);
-               // fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                // fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 fragmentTransaction.addToBackStack("stack");
                 fragmentTransaction.commit();
                 break;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void aClick(View view){
+    public void aClick(View view) {
         demoFragment.dfAClick(view);
     }
 }

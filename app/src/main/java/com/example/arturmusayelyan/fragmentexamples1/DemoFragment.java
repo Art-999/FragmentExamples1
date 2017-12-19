@@ -47,12 +47,12 @@ public class DemoFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         listView = view.findViewById(R.id.list_for_demo_fragment);
-        List<String> dataList=getArguments().getStringArrayList("list");
-        listView.setAdapter(new ArrayAdapter<>(getActivity(),android.R.layout.simple_list_item_1,dataList));
+        List<String> dataList = getArguments().getStringArrayList("list");
+        listView.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, dataList));
     }
 
 
-    public void dfAClick(View view){
+    public void dfAClick(View view) {
         //do something
     }
 }
